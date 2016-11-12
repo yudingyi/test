@@ -9,3 +9,16 @@ sudo service ssh restart
 秘钥未产生效果：
 是在linux用户下 添加到~/.ssh/authorized_keys中的
 所以可以？必须？ 用 username@ip address?
+
+git
+git remote add origin https://github.com/yudingyi/test.git
+git remote add origin git@github.com:yudingyi/test.git
+git push -u origin master
+git remote -v  列出详细信息，在每一个名字后面列出其远程url
+linux git :
+安装好后需要创建用户名和邮箱地址：
+git config global user.name ""
+git config global user.email ""
+
+dockj
+jj2642898
