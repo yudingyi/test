@@ -1,0 +1,11 @@
+ssh: 
+Permission denied, please try again.
+默认登录的是root 所以账号密码会错误
+在/etc/ssh/sshd_config 下修改PermitrootLogin
+找到：PermitRootLogin prohibit-password禁用
+添加：PermitRootLogin yes
+sudo service ssh restart
+
+秘钥未产生效果：
+是在linux用户下 添加到~/.ssh/authorized_keys中的
+所以可以？必须？ 用 username@ip address?
